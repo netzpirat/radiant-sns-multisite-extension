@@ -5,7 +5,7 @@ class SnsMultisiteExtension < Radiant::Extension
   
   def activate
     TextAsset.send :is_site_scoped
-    admin.text_asset.index.add :top, "admin/shared/site_jumper"
+    admin.text_assets.index.add :top, "admin/shared/site_jumper"
   end
   
 end
